@@ -1,0 +1,33 @@
+<%= form_for(@route_via_info) do |f| %>
+  <% if @route_via_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@route_via_info.errors.count, "error") %> prohibited this route_via_info from being saved:</h2>
+
+      <ul>
+      <% @route_via_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :postings_id %><br />
+    <%= f.number_field :postings_id %>
+  </div>
+  <div class="field">
+    <%= f.label :route_via %><br />
+    <%= f.text_field :route_via %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.number_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.number_field :updated_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

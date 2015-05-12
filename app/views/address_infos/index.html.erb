@@ -1,0 +1,37 @@
+<h1>Listing address_infos</h1>
+
+<table>
+  <tr>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Zip</th>
+    <th>Validation status</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @address_infos.each do |address_info| %>
+  <tr>
+    <td><%= address_info.address1 %></td>
+    <td><%= address_info.address2 %></td>
+    <td><%= address_info.state %></td>
+    <td><%= address_info.city %></td>
+    <td><%= address_info.zip %></td>
+    <td><%= address_info.validation_status %></td>
+    <td><%= address_info.created_by %></td>
+    <td><%= address_info.updated_by %></td>
+    <td><%= link_to 'Show', address_info %></td>
+    <td><%= link_to 'Edit', edit_address_info_path(address_info) %></td>
+    <td><%= link_to 'Destroy', address_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Address info', new_address_info_path %>

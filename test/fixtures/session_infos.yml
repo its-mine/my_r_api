@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  uid: MyString
+  account_info_id: 1
+  status: 1
+  created_by: 1
+  updated_by: 1
+
+two:
+  uid: MyString
+  account_info_id: 1
+  status: 1
+  created_by: 1
+  updated_by: 1

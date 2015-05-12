@@ -1,4 +1,37 @@
 PostComment::Application.routes.draw do
+  resources :session_infos
+
+
+  resources :route_via_infos
+
+
+  resources :reliability_infos
+
+
+  resources :postings
+
+
+  resources :partner_infos
+
+
+  resources :location_infos
+
+
+  resources :fare_infos
+
+
+  resources :domain_hosts
+
+
+  resources :contact_infos
+
+
+  resources :address_infos
+
+
+  resources :account_infos
+
+
   resources :projects
 
 

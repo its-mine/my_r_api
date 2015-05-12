@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @reliability_info.description %>
+</p>
+
+<p>
+  <b>Star rating:</b>
+  <%= @reliability_info.star_rating %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @reliability_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @reliability_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_reliability_info_path(@reliability_info) %> |
+<%= link_to 'Back', reliability_infos_path %>

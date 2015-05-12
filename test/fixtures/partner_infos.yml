@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  partner_id: MyString
+  partner_name: MyString
+  primary_contact_id: 1
+  status: 1
+  reliability_id: 1
+  created_by: 1
+  updated_by: 1
+
+two:
+  partner_id: MyString
+  partner_name: MyString
+  primary_contact_id: 1
+  status: 1
+  reliability_id: 1
+  created_by: 1
+  updated_by: 1

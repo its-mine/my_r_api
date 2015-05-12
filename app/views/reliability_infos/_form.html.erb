@@ -1,0 +1,33 @@
+<%= form_for(@reliability_info) do |f| %>
+  <% if @reliability_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reliability_info.errors.count, "error") %> prohibited this reliability_info from being saved:</h2>
+
+      <ul>
+      <% @reliability_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :star_rating %><br />
+    <%= f.number_field :star_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.number_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.number_field :updated_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

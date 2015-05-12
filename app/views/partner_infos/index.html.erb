@@ -1,0 +1,35 @@
+<h1>Listing partner_infos</h1>
+
+<table>
+  <tr>
+    <th>Partner</th>
+    <th>Partner name</th>
+    <th>Primary contact</th>
+    <th>Status</th>
+    <th>Reliability</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @partner_infos.each do |partner_info| %>
+  <tr>
+    <td><%= partner_info.partner_id %></td>
+    <td><%= partner_info.partner_name %></td>
+    <td><%= partner_info.primary_contact_id %></td>
+    <td><%= partner_info.status %></td>
+    <td><%= partner_info.reliability_id %></td>
+    <td><%= partner_info.created_by %></td>
+    <td><%= partner_info.updated_by %></td>
+    <td><%= link_to 'Show', partner_info %></td>
+    <td><%= link_to 'Edit', edit_partner_info_path(partner_info) %></td>
+    <td><%= link_to 'Destroy', partner_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Partner info', new_partner_info_path %>

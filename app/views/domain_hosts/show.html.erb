@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Partner info:</b>
+  <%= @domain_host.partner_info_id %>
+</p>
+
+<p>
+  <b>Host name:</b>
+  <%= @domain_host.host_name %>
+</p>
+
+<p>
+  <b>Domain name:</b>
+  <%= @domain_host.domain_name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @domain_host.status %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @domain_host.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @domain_host.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_domain_host_path(@domain_host) %> |
+<%= link_to 'Back', domain_hosts_path %>

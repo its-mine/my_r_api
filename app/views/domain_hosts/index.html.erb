@@ -1,0 +1,33 @@
+<h1>Listing domain_hosts</h1>
+
+<table>
+  <tr>
+    <th>Partner info</th>
+    <th>Host name</th>
+    <th>Domain name</th>
+    <th>Status</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @domain_hosts.each do |domain_host| %>
+  <tr>
+    <td><%= domain_host.partner_info_id %></td>
+    <td><%= domain_host.host_name %></td>
+    <td><%= domain_host.domain_name %></td>
+    <td><%= domain_host.status %></td>
+    <td><%= domain_host.created_by %></td>
+    <td><%= domain_host.updated_by %></td>
+    <td><%= link_to 'Show', domain_host %></td>
+    <td><%= link_to 'Edit', edit_domain_host_path(domain_host) %></td>
+    <td><%= link_to 'Destroy', domain_host, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Domain host', new_domain_host_path %>

@@ -1,0 +1,115 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Source geo:</b>
+  <%= @posting.source_geo %>
+</p>
+
+<p>
+  <b>Destination geo:</b>
+  <%= @posting.destination_geo %>
+</p>
+
+<p>
+  <b>Travel date time:</b>
+  <%= @posting.travel_date_time %>
+</p>
+
+<p>
+  <b>Travel date time utc:</b>
+  <%= @posting.travel_date_time_utc %>
+</p>
+
+<p>
+  <b>Available seats:</b>
+  <%= @posting.available_seats %>
+</p>
+
+<p>
+  <b>Fare:</b>
+  <%= @posting.fare_id %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @posting.contact_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @posting.status %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @posting.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @posting.state %>
+</p>
+
+<p>
+  <b>Pincode:</b>
+  <%= @posting.pincode %>
+</p>
+
+<p>
+  <b>From place tag1:</b>
+  <%= @posting.from_place_tag1 %>
+</p>
+
+<p>
+  <b>From place tag2:</b>
+  <%= @posting.from_place_tag2 %>
+</p>
+
+<p>
+  <b>From place tag3:</b>
+  <%= @posting.from_place_tag3 %>
+</p>
+
+<p>
+  <b>To place tag1:</b>
+  <%= @posting.to_place_tag1 %>
+</p>
+
+<p>
+  <b>To place tag2:</b>
+  <%= @posting.to_place_tag2 %>
+</p>
+
+<p>
+  <b>To place tag3:</b>
+  <%= @posting.to_place_tag3 %>
+</p>
+
+<p>
+  <b>Number of routes:</b>
+  <%= @posting.number_of_routes %>
+</p>
+
+<p>
+  <b>Is spam:</b>
+  <%= @posting.is_spam %>
+</p>
+
+<p>
+  <b>Reliability:</b>
+  <%= @posting.reliability_id %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @posting.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @posting.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_posting_path(@posting) %> |
+<%= link_to 'Back', postings_path %>

@@ -1,0 +1,29 @@
+<h1>Listing fare_infos</h1>
+
+<table>
+  <tr>
+    <th>Fare type</th>
+    <th>Total fare</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fare_infos.each do |fare_info| %>
+  <tr>
+    <td><%= fare_info.fare_type %></td>
+    <td><%= fare_info.total_fare %></td>
+    <td><%= fare_info.created_by %></td>
+    <td><%= fare_info.updated_by %></td>
+    <td><%= link_to 'Show', fare_info %></td>
+    <td><%= link_to 'Edit', edit_fare_info_path(fare_info) %></td>
+    <td><%= link_to 'Destroy', fare_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fare info', new_fare_info_path %>

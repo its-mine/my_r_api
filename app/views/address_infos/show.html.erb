@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Address1:</b>
+  <%= @address_info.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @address_info.address2 %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @address_info.state %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @address_info.city %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @address_info.zip %>
+</p>
+
+<p>
+  <b>Validation status:</b>
+  <%= @address_info.validation_status %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @address_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @address_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_info_path(@address_info) %> |
+<%= link_to 'Back', address_infos_path %>

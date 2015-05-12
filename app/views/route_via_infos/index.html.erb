@@ -1,0 +1,29 @@
+<h1>Listing route_via_infos</h1>
+
+<table>
+  <tr>
+    <th>Postings</th>
+    <th>Route via</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @route_via_infos.each do |route_via_info| %>
+  <tr>
+    <td><%= route_via_info.postings_id %></td>
+    <td><%= route_via_info.route_via %></td>
+    <td><%= route_via_info.created_by %></td>
+    <td><%= route_via_info.updated_by %></td>
+    <td><%= link_to 'Show', route_via_info %></td>
+    <td><%= link_to 'Edit', edit_route_via_info_path(route_via_info) %></td>
+    <td><%= link_to 'Destroy', route_via_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Route via info', new_route_via_info_path %>

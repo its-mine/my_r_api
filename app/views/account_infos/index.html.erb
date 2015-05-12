@@ -1,0 +1,39 @@
+<h1>Listing account_infos</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Passphrase</th>
+    <th>Partner info</th>
+    <th>Status</th>
+    <th>Session status</th>
+    <th>Reliability</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @account_infos.each do |account_info| %>
+  <tr>
+    <td><%= account_info.email_id %></td>
+    <td><%= account_info.password %></td>
+    <td><%= account_info.passphrase %></td>
+    <td><%= account_info.partner_info_id %></td>
+    <td><%= account_info.status %></td>
+    <td><%= account_info.session_status %></td>
+    <td><%= account_info.reliability_id %></td>
+    <td><%= account_info.created_by %></td>
+    <td><%= account_info.updated_by %></td>
+    <td><%= link_to 'Show', account_info %></td>
+    <td><%= link_to 'Edit', edit_account_info_path(account_info) %></td>
+    <td><%= link_to 'Destroy', account_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Account info', new_account_info_path %>

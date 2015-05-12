@@ -1,0 +1,33 @@
+<%= form_for(@fare_info) do |f| %>
+  <% if @fare_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fare_info.errors.count, "error") %> prohibited this fare_info from being saved:</h2>
+
+      <ul>
+      <% @fare_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fare_type %><br />
+    <%= f.text_field :fare_type %>
+  </div>
+  <div class="field">
+    <%= f.label :total_fare %><br />
+    <%= f.number_field :total_fare %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.number_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.number_field :updated_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

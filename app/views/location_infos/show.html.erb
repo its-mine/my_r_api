@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Partner info:</b>
+  <%= @location_info.partner_info_id %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @location_info.contact_id %>
+</p>
+
+<p>
+  <b>Location name:</b>
+  <%= @location_info.location_name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @location_info.address_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @location_info.status %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @location_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @location_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_location_info_path(@location_info) %> |
+<%= link_to 'Back', location_infos_path %>

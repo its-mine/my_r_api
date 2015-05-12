@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Fare type:</b>
+  <%= @fare_info.fare_type %>
+</p>
+
+<p>
+  <b>Total fare:</b>
+  <%= @fare_info.total_fare %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @fare_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @fare_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_fare_info_path(@fare_info) %> |
+<%= link_to 'Back', fare_infos_path %>

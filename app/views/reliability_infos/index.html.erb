@@ -1,0 +1,29 @@
+<h1>Listing reliability_infos</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Star rating</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reliability_infos.each do |reliability_info| %>
+  <tr>
+    <td><%= reliability_info.description %></td>
+    <td><%= reliability_info.star_rating %></td>
+    <td><%= reliability_info.created_by %></td>
+    <td><%= reliability_info.updated_by %></td>
+    <td><%= link_to 'Show', reliability_info %></td>
+    <td><%= link_to 'Edit', edit_reliability_info_path(reliability_info) %></td>
+    <td><%= link_to 'Destroy', reliability_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reliability info', new_reliability_info_path %>

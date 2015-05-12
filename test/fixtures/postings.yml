@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  source_geo: 1
+  destination_geo: 1
+  travel_date_time: 2015-05-12 21:01:12
+  travel_date_time_utc: 1
+  available_seats: 1
+  fare_id: 1
+  contact_id: 1
+  status: 1
+  city: MyString
+  state: MyString
+  pincode: MyString
+  from_place_tag1: MyString
+  from_place_tag2: MyString
+  from_place_tag3: MyString
+  to_place_tag1: MyString
+  to_place_tag2: MyString
+  to_place_tag3: MyString
+  number_of_routes: 1
+  is_spam: MyString
+  reliability_id: 1
+  created_by: 1
+  updated_by: 1
+
+two:
+  source_geo: 1
+  destination_geo: 1
+  travel_date_time: 2015-05-12 21:01:12
+  travel_date_time_utc: 1
+  available_seats: 1
+  fare_id: 1
+  contact_id: 1
+  status: 1
+  city: MyString
+  state: MyString
+  pincode: MyString
+  from_place_tag1: MyString
+  from_place_tag2: MyString
+  from_place_tag3: MyString
+  to_place_tag1: MyString
+  to_place_tag2: MyString
+  to_place_tag3: MyString
+  number_of_routes: 1
+  is_spam: MyString
+  reliability_id: 1
+  created_by: 1
+  updated_by: 1

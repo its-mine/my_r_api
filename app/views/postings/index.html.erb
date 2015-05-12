@@ -1,0 +1,65 @@
+<h1>Listing postings</h1>
+
+<table>
+  <tr>
+    <th>Source geo</th>
+    <th>Destination geo</th>
+    <th>Travel date time</th>
+    <th>Travel date time utc</th>
+    <th>Available seats</th>
+    <th>Fare</th>
+    <th>Contact</th>
+    <th>Status</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Pincode</th>
+    <th>From place tag1</th>
+    <th>From place tag2</th>
+    <th>From place tag3</th>
+    <th>To place tag1</th>
+    <th>To place tag2</th>
+    <th>To place tag3</th>
+    <th>Number of routes</th>
+    <th>Is spam</th>
+    <th>Reliability</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @postings.each do |posting| %>
+  <tr>
+    <td><%= posting.source_geo %></td>
+    <td><%= posting.destination_geo %></td>
+    <td><%= posting.travel_date_time %></td>
+    <td><%= posting.travel_date_time_utc %></td>
+    <td><%= posting.available_seats %></td>
+    <td><%= posting.fare_id %></td>
+    <td><%= posting.contact_id %></td>
+    <td><%= posting.status %></td>
+    <td><%= posting.city %></td>
+    <td><%= posting.state %></td>
+    <td><%= posting.pincode %></td>
+    <td><%= posting.from_place_tag1 %></td>
+    <td><%= posting.from_place_tag2 %></td>
+    <td><%= posting.from_place_tag3 %></td>
+    <td><%= posting.to_place_tag1 %></td>
+    <td><%= posting.to_place_tag2 %></td>
+    <td><%= posting.to_place_tag3 %></td>
+    <td><%= posting.number_of_routes %></td>
+    <td><%= posting.is_spam %></td>
+    <td><%= posting.reliability_id %></td>
+    <td><%= posting.created_by %></td>
+    <td><%= posting.updated_by %></td>
+    <td><%= link_to 'Show', posting %></td>
+    <td><%= link_to 'Edit', edit_posting_path(posting) %></td>
+    <td><%= link_to 'Destroy', posting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Posting', new_posting_path %>

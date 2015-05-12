@@ -1,0 +1,35 @@
+<h1>Listing location_infos</h1>
+
+<table>
+  <tr>
+    <th>Partner info</th>
+    <th>Contact</th>
+    <th>Location name</th>
+    <th>Address</th>
+    <th>Status</th>
+    <th>Created by</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @location_infos.each do |location_info| %>
+  <tr>
+    <td><%= location_info.partner_info_id %></td>
+    <td><%= location_info.contact_id %></td>
+    <td><%= location_info.location_name %></td>
+    <td><%= location_info.address_id %></td>
+    <td><%= location_info.status %></td>
+    <td><%= location_info.created_by %></td>
+    <td><%= location_info.updated_by %></td>
+    <td><%= link_to 'Show', location_info %></td>
+    <td><%= link_to 'Edit', edit_location_info_path(location_info) %></td>
+    <td><%= link_to 'Destroy', location_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Location info', new_location_info_path %>

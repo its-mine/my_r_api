@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fare_type: MyString
+  total_fare: 1
+  created_by: 1
+  updated_by: 1
+
+two:
+  fare_type: MyString
+  total_fare: 1
+  created_by: 1
+  updated_by: 1

@@ -1,0 +1,45 @@
+<%= form_for(@location_info) do |f| %>
+  <% if @location_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@location_info.errors.count, "error") %> prohibited this location_info from being saved:</h2>
+
+      <ul>
+      <% @location_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :partner_info_id %><br />
+    <%= f.number_field :partner_info_id %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_id %><br />
+    <%= f.number_field :contact_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location_name %><br />
+    <%= f.text_field :location_name %>
+  </div>
+  <div class="field">
+    <%= f.label :address_id %><br />
+    <%= f.number_field :address_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.number_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.number_field :updated_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Email:</b>
+  <%= @account_info.email_id %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @account_info.password %>
+</p>
+
+<p>
+  <b>Passphrase:</b>
+  <%= @account_info.passphrase %>
+</p>
+
+<p>
+  <b>Partner info:</b>
+  <%= @account_info.partner_info_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @account_info.status %>
+</p>
+
+<p>
+  <b>Session status:</b>
+  <%= @account_info.session_status %>
+</p>
+
+<p>
+  <b>Reliability:</b>
+  <%= @account_info.reliability_id %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @account_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @account_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_info_path(@account_info) %> |
+<%= link_to 'Back', account_infos_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Uid:</b>
+  <%= @session_info.uid %>
+</p>
+
+<p>
+  <b>Account info:</b>
+  <%= @session_info.account_info_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @session_info.status %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @session_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @session_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_session_info_path(@session_info) %> |
+<%= link_to 'Back', session_infos_path %>

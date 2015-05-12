@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  partner_info_id: 1
+  contact_id: 1
+  location_name: MyString
+  address_id: 1
+  status: 1
+  created_by: 1
+  updated_by: 1
+
+two:
+  partner_info_id: 1
+  contact_id: 1
+  location_name: MyString
+  address_id: 1
+  status: 1
+  created_by: 1
+  updated_by: 1

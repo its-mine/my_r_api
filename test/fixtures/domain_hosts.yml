@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  partner_info_id: 1
+  host_name: MyString
+  domain_name: MyString
+  status: MyString
+  created_by: 1
+  updated_by: 1
+
+two:
+  partner_info_id: 1
+  host_name: MyString
+  domain_name: MyString
+  status: MyString
+  created_by: 1
+  updated_by: 1

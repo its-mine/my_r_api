@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Postings:</b>
+  <%= @route_via_info.postings_id %>
+</p>
+
+<p>
+  <b>Route via:</b>
+  <%= @route_via_info.route_via %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @route_via_info.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @route_via_info.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_via_info_path(@route_via_info) %> |
+<%= link_to 'Back', route_via_infos_path %>
